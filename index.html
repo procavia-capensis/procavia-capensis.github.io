@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="Anonymous Author">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./main.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+    <title>My Bookmarks :)</title>
+  </head>
+  <body>
+    <header>
+      <h1>Meine kleine Bookmark Sammlung</h1>
+    </header>
+    <main>
+      <div class="bookmark">
+        <h1>Kleine Linkliste für Probleme mit SQL</h1>
+        <p class="date-wrapper">added on <span class="date">2018-12-06</span></p>
+        <ul>
+          <li><a href="https://www.tutlane.com/tutorial/sqlite/sqlite-injection-attacks">SQL Injections in Python</a></li>
+          <li><a href="https://www.owasp.org/index.php/SQL_Injection">OWASP List</a></li>
+        </ul>
+      </div>
+      <!--
+      <div class="bookmark">
+        <h1>Sox</h1>
+        <p class="date-wrapper">added on <span class="date">2018-12-17</span></p>
+        <p>SoX, the Swiss Army knife of sound processing programs.</p>
+        <section>
+        <p>Da ich gestern schon über ffmpeg gebloggt habe, muss ich noch <b>SoX</b> erwähnen.
+          Passend zu den analyse features von gestern kann Sox statistische Analysen ausführen (zb. Frequenz Spectrogramme plotten).
+        </p>
+        </section>
+      </div>
+      -->
+      <div class="bookmark">
+        <h1>FFmpeg</h1>
+        <p class="date-wrapper">added on <span class="date">2018-12-16</span></p>
+        <p></p>
+        <section>
+          <p>In letzter Zeit musste häufiger mal die waveform einer Audiodatei ansehen.
+          Natürlich hat <a href="https://ffmpeg.org">ffmpeg</a> da den passenden Befehl schon auf Lager:
+            <pre>
+            ffmpeg -i out.wav \
+              -filter_complex "aformat=channel_layouts=mono,showwavespic=s=1000x400" \
+              -frames:v 1 \
+              waveform.png
+            </pre>
+          </p>
+        </section>
+      </div>
+  </body>
+</html>
